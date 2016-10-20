@@ -1,0 +1,585 @@
+,0
+0," Analytics has increasingly become a major focus for Apache Solr , the primary search engine in the Hadoop stack"
+1," Yonik Seeley explores recent Apache Solr features in the areas of faceting and analytics , including parallel SQL , streaming expressions , distributed join , and distributed graph queries"
+2," Given the increasing number of APIs and techniques that can be brought to bear , Yonik also covers the trade-offs of different approaches and strategies for maximizing scalability ."
+3," Project Jupyter provides building blocks for interactive and exploratory computing that make science and data science reproducible across over 40 programming languages ( Python , Julia , R , etc . )"
+4," Central to the project is the Jupyter Notebook , a web-based , interactive computing platform that allows users to author data- and code-driven narratives ( computational narratives ) that combine live code , equations , narrative text , visualizations , interactive dashboards , and other media"
+5," While the Jupyter Notebook has proved to be an incredibly productive way of working interactively with code and data , it is helpful to decompose notebooks into more primitive building blocks : kernels for code execution , input areas for typing code , markdown cells for composing narrative content , output areas for showing results , terminals , etc ."
+6, CartoDB has enabled hundreds of thousands of users to visualize their data as beautiful maps to gain insights and share stories
+7," However , these maps contain information that often can’t be uncovered by visualization alone"
+8," By applying geospatial statistical methods and machine learning , new stories and understanding can be extracted and predictions can be made ."
+9," In pursuit of speed and efficiency , big data processing is continuing its logical evolution toward columnar execution"
+10," A number of key big data technologies , including Kudu , Ibis , and Drill , have or will soon have in-memory columnar capabilities"
+11, The solid foundation laid by Apache Arrow and Apache Parquet for a shared columnar representation across the ecosystem promises a great future
+12, Modern CPUs achieve higher throughput using SIMD instructions and vectorization on Arrow’s columnar in-memory representation
+13," Similarly , Parquet provides storage and I/O optimized columnar data access using statistics and appropriate encodings"
+14," For interoperability , row-based encodings ( CSV , Thrift , Avro ) combined with general-purpose compression algorithms ( GZip , LZO , Snappy ) are common but inefficient"
+15, The Arrow and Parquet projects define standard columnar representations allowing interoperability without the usual cost of serialization .
+16, Yahoo initially built Hadoop as an answer to a very acute pain around efficiently storing and processing large volumes of data
+17," Since Yahoo open sourced Hadoop , it has become widely adopted in the technology world"
+18," However , time has taught us that when a system becomes extremely popular for solving one class of problems , its limitations in solving other problems become more apparent"
+19, Himanshu Gupta explains why Yahoo has been increasingly investing in interactive analytics and how it leverages Druid to power a variety of internal- and external-facing data applications .
+20," The Netflix data platform is constantly evolving , but fundamentally it’s an all-cloud platform at a massive scale ( 40+ PB and over 700 billion new events per day ) focused on empowering developers"
+21, Kurt Brown dives into the current technology landscape at Netflix and offers some thoughts on what the future holds .
+22," Whether we’re talking about spam emails , merging records , or investigating clusters , there are many times when having a measure of how alike things are makes them easier to work with"
+23," You may have unstructured or vague data that isn’t incorporated into your data models ( e.g. , information from subject-matter experts who have a sense of whether something is good or bad , similar or different )"
+24, Melissa Santos offers a practical approach to creating a distance metric and validating with business owners that it provides value—providing you with the tools to turn that expert information into numbers you can compare and use to quickly see structures in the data .
+25," The new world of data exploration using virtual , augmented , and mixed reality brings powerful new capabilities and challenges for data visualization engineers , designers , and professionals"
+26, Brad Sarsfield demonstrates new input and output capabilities of holographic computing in relation to mixed-reality data visualizations with examples that are both visually beautiful and deeply practical .
+27," FINRA ingests over 50 billion records of stock market trading data daily , and its examiners , compliance officers , and analysts look at different slices of this data to draw powerful insights on market behavior and to identify anomalies in trading patterns"
+28," Janaki Parameswaran and Kishore Ramachandran explain how FINRA technology integrates data feeds from disparate systems to provide analytics and visuals for regulating equities , options , and fixed-income markets ."
+29, Data lineage is critical to answering a wide range of questions about how data is being used within an organization
+30," Which datasets and table columns are driving key performance indicators ? How is certain privacy-sensitive data being used ? Where do errors or outliers arise , and how do they propagate forward ? Where are inefficient or unnecessary processing steps being taken ? Tracking data lineage is also critical in real-world use cases such as regulatory reporting and compliance ."
+31," Which suppliers are most likely to have delivery or quality issues ? Does service , product placement , or price make the biggest difference in customer sentiment ? Finding the answers to these questions in structured data is often straightforward , but can we answer them using the unstructured data ( free text ) in emails , social media , call center transcripts , product reviews , and other sources ?"
+32, Visual analysis is changing in the era of GPU clusters
+33," Now that scale compute is easier , the bottleneck is mapping data to visualizations and intelligently interacting with them"
+34," Using datasets uploaded to Graphistry , Leo Meyerovich provides a glimpse into the emerging workflows for graph and linked event analysis and offers common tricks for success ."
+35, Kudu is redefining the big data ecosystem and opening doors to capabilities not available before
+36," Comcast is moving in the direction of adopting Kudu with Impala and Spark for several projects , including real-time processing of events from Xfinity devices"
+37," Sridhar Alla and Kiran Muglurmath explain how real-time analytics on Comcast Xfinity set-top boxes ( STBs ) help drive several customer-facing and internal data-science-oriented applications and how Comcast uses Kudu to fill the gaps in batch and real-time storage and computation needs , allowing Comcast to process the high-speed data without the elaborate solutions needed till now ."
+38," For a long time , a substantial portion of the data processing that companies did ran as big batch jobs—CSV files dumped out of databases , log files collected at the end of the day , etc"
+39," But businesses operate in real time , and the software they run is catching up"
+40," Rather than processing data only at the end of the day , why not react to it continuously as the data arrives ? This is the emerging world of stream processing ."
+41, Moving from batch to streaming involves changing how we think about time
+42, Streaming data is neither bounded nor typically well ordered in time
+43," However , to make streaming systems useful and deliver on the promise of low-latency results , we often want to know when we have all the data relevant to emitting a correct aggregation"
+44," Watermarks provide the foundation for making such decisions , enabling streaming systems to emit timely , correct results when processing out-of-order data ."
+45," In a streaming data processing system , where data is generally unbounded , triggers specify when each stage of computation should emit output"
+46," With a small language of primitive conditions and multiple ways of combining them , triggers provide the flexibility to tailor a streaming pipeline to a variety of use cases and data sources , enabling a practitioner to achieve an appropriate balance between accuracy , latency , and cost"
+47," ( Some conditions under which one may choose to “fire”—aka trigger output—include after the system believes all data for the current window is processed , after at least 1,000 elements have arrived for processing , when the first of trigger A and trigger B fires , or according to trigger A until trigger B fires . )"
+48," Time series and event data form the basis for real-time insights about the performance of businesses such as ecommerce , the IoT , and web services , but gaining these insights involves designing a learning system that scales to millions and billions of data streams"
+49, Ira Cohen outlines a system that performs real-time machine learning and analytics on streams at massive scale .
+50, Modern cars produce data
+51, Lots of data
+52, And Formula 1 cars produce more than their fair share
+53, Ted Dunning presents a demo of how data streaming can be applied to the analytics problems posed by modern motorsports
+54," Although he won’t be bringing Formula 1 cars to the talk , Ted demonstrates a high-fidelity , physics-based automotive simulator to produce realistic data from simulated cars running on the Spa-Francorchamps track"
+55," As Ted moves data from the cars to the pits to the engineers back at HQ , the result is near real-time visualization and comparison of performance and a great exposition of how to move data using messaging systems like Kafka ."
+56," Fifteen years ago , Webvan spectacularly failed to bring grocery delivery online"
+57, Speculation has been high that the current wave of on-demand grocery delivery startups will meet similar fates
+58, Jeremy Stanley explains why this time the story will be different—data science is the key
+59," Innovations in mobile applications have paved the way , but significant investments in algorithms to optimize efficiency will drive positive unit economics ."
+60," To anticipate who will succeed and invest wisely , investors spend a lot of time trying to understand the longer-term trends within an industry"
+61," In a panel discussion , top-tier VCs look over the horizon and consider the big trends in big data , explaining what they think the field will look like a few years ( or more ) down the road"
+62, Join us to hear about the trends that everyone is seeing and areas for investment that they find exciting .
+63," Three-quarters of firms tell Forrester they aspire to be data driven , yet less than a third are good at connecting insights to actions that really matter"
+64, A new generation of digital competitors does not have this problem and stands poised to steal $ 1.2 trillion from traditional enterprises by 2020
+65," Many of them are presenting at Strata , but what does this new breed of competitors have in common beyond using technology like Hadoop and Spark ?"
+66, Leading companies that are getting the most out of their data are not focusing on queries and data lakes ; they are actively integrating analytics into their operations with a data-first application development approach
+67," Real-time adjustments to improve revenues , reduce costs , or mitigate risk rely on applications that minimize latency on a variety of data sources"
+68," Jack Norris reviews best practices for three use cases in ad/media , financial services , and healthcare to show how customers develop , deploy , and dynamically update these applications and how this data-first approach is fundamentally different from traditional applications ."
+69, The best data-driven companies constantly utilize data at each function of the business
+70," One well-known example , Uber , brought a data-driven approach to the taxi industry , using information about where customers are located , changing its price based on demand , and gathering customer feedback scores to improve customer satisfaction"
+71, Today more and more companies are accessing and operationalizing instant data in a similar way
+72," Daniel Mintz dives into case studies from three companies—ThredUp , Twilio , and Warby Parker—that use data to generate sustainable competitive advantages in their industries"
+73, These companies have three characteristics in common .
+74," At the start of the Crimean War in 1853 , Britain’s Royal Navy needed 90 new gunboats ready to fight in the Baltic in just 90 days"
+75, Assembling the boats was straightforward
+76, The challenge was to build all of the engine sets in time
+77," Marine engineer John Penn did an unusual thing : he took a pair of reference engines , disassembled them , and distributed the pieces to the best machine shops across Britain"
+78," These workshops—latter-day microservices—each built 90 sets of their allocated parts , which were then assembled into the engines for the new gunboats , ready for battle ."
+79, Enterprises that pursue data-driven operations and decisions are approaching the conclusion that graph analysis capabilities will yield critical competitive advantages
+80," However , for this impact to be fully realized , the results of any graph analysis must be available , in real time , to operational applications , data scientists , and developers across the enterprise ."
+81," While all other industries have embraced the digital era , healthcare seems to be still playing catch-up"
+82," In this , Kaiser Permanente is an anomaly"
+83, Kaiser Permanente is a leader in healthcare technology—technology has been at center stage in Kaiser Permanente since it first started using computing to improve healthcare results in the 1960s
+84," Today , Kaiser Permanente is an integrated health care delivery system with 10 million members and about 200,000 employees ."
+85, Billions of Visa cards are used around the world to make payments
+86, Each payment transaction has a story
+87," Getting payments from point A to point B is complex , and the resulting data Visa captures reflects this"
+88," The scale and complexity of that data is a direct manifestation of the number , variety , and complexity of payment transactions processed by the Visa network ."
+89," Last year , LinkedIn embarked on an ambitious mission to completely revamp the mobile experience for its members"
+90," This would mean a completely new mobile application , reimagined user experiences , and new interaction concepts"
+91," As the team evaluated the impact of this big rewrite on the data analytics ecosystem , they observed a few problems ."
+92," The world is producing an ever-increasing volume , velocity , and variety of big data"
+93," Consumers and businesses are demanding up-to-the-second ( or even millisecond ) analytics on their fast-moving data , in addition to classic batch processing"
+94, The Hadoop ecosystem and AWS provide a plethora of tools for solving big data problems
+95," But what tools should you use , why , and how ?"
+96," Today , Hadoop is deployed on-premises and in the public cloud , with public cloud increasingly becoming more prevalent"
+97," The cloud provides some unique abilities , including on-demand infrastructure , cluster elasticity , persisted globally available object storage , and pay-for-use pricing , which enables even more flexible and cost-efficient deployment options for BI and SQL analytic users of Impala but brings in new challenges that need to be carefully considered to achieve optimal outcome ."
+98," From data exploration to prototyping to final delivery , anyone engaged in using data science for social good knows that the path from project kickoff to delivery is full of exciting twists and turns"
+99," JeanCarlo Bonilla , Susan Sun , and Caitlin Augustin explore how DataKind volunteer teams navigate the road to social impact by automating evidence collection for conservationists and helping expand the reach of mobile surveys so that more voices can be heard ."
+100, Every industry has both proven and potential data lake use cases
+101," With enterprise data warehouses ( EDWs ) being rendered ever more inefficient when facing new business needs , cloud-based data lakes have been gaining popularity with enterprises looking to cover the technology gap"
+102, Cloud data lakes are purpose-built to meet the data management requirements of the evolving enterprise landscape .
+103," As the momentum with which big data drives decisions continues to grow , the relevant legal considerations relating to collection and use of such data will also increase and evolve"
+104, Understanding the legal frameworks applicable to collection and use of data for certain purposes is key to making compliance-based business decisions and maintaining long-term consumer trust in a brand .
+105," With rapid advances in the field of data science and the availability of real-time streaming data , the specter of a data-driven dystopia looms larger than ever"
+106," Mainstream media , civil rights advocates , and watchdog groups of all political persuasions are increasingly questioning the legitimacy of proprietary predictive tools that are widely used in areas from law enforcement to healthcare ."
+107," How are users meant to interpret the influence of big data and personalization in their targeted experiences ? What signals show how your data is used and how it improves or constrains your experience ? To what degree is this experience based on coarse demographics or the entire data profile of your browsing history ? Sara Watson explains that in order to develop normative opinions to shape policy and practice , users need means to guide their experience—the personalization spectrum ."
+108, Enterprises are increasingly demanding real-time analytics and insights
+109," Tony Ng offers an overview of Pulsar , an open source real-time streaming system used at eBay , which can scale to millions of events per second with 4GL SQL-like language support"
+110," Pulsar provides real-time sessionization , multidimensional metrics aggregation over time windows , and custom stream creation through data enrichment , filtering , and stateful processing"
+111," Tony explains how Pulsar integrates Kafka , Kylin , and Druid to provide flexibility and scalability in event and metrics consumption ."
+112," The landscape for storing your big data is quite complex , with several competing formats and different implementations of each format"
+113, Picking the best data format depends on what kind of data you have and how you plan to use it
+114," Depending on your use case , different formats perform very differently"
+115," Although you can use a hammer to drive a screw , it isn’t fast or easy to do so"
+116, Owen O’Malley outlines the performance differences between formats in different use cases and offers an overview of the advantages and disadvantages of each to help you improve the performance of your applications .
+117," When it comes to SQL-on-Hadoop , it is easy to feel overwhelmed with the number of choices available in tools , file formats , schema design , and configurations"
+118," However , in reality , making good design choices when you start will help you avoid some of the common pitfalls"
+119," Marcel Kornacker and Mostafa Mokhtar simplify the process and cover top performance optimizations for Apache Impala ( incubating ) , from schema design and memory optimization to query tuning ."
+120," Most data centers ( and many cloud deployments ) are statically partitioned into siloed clusters dedicated to running individual datacenter-scale applications , including web services , databases , and batch/stream processing"
+121," This static partitioning model limits overall cluster utilization , decreases flexibility , and poses operational challenges"
+122," There is an increasing need to integrate big data applications like Apache Hadoop and Apache Spark with other data center services like Apache Cassandra or Apache Kafka , ideally colocating the data with the services that need it ."
+123," Ever since its creation , HDFS has relied on data replication to shield against most failure scenarios"
+124," However , with the explosive growth in data volume , replication is getting quite expensive : the default 3x replication scheme incurs a 200 % overhead in storage space and other resources ( e.g. , network bandwidth when writing the data )"
+125, Erasure coding ( EC ) uses far less storage space while still providing the same level of fault tolerance
+126," Under typical configurations , EC reduces the storage cost by ~50 % compared with 3x replication ."
+127, Several big data graph processing frameworks that have been built to run on large graph datasets have been proposed and are in use at large corporations for applications ranging from social network analysis to machine learning to the PageRank algorithm
+128," However , these libraries can also be put to work to study the nature of cancer ."
+129, We’ve seen significant progress in infrastructure for using data effectively in the last half-decade
+130, But this hasn’t applied to all types of data equally
+131," Unstructured text , in particular , has been slower to yield to the kinds of analysis that many businesses are starting to take for granted"
+132," Rather than being limited by what we can collect , we are now constrained by the tools , time , and techniques to make good use of it"
+133, But we are beginning to gain the ability to do remarkable things with unstructured text data .
+134," As healthcare data becomes more digitized , the opportunity to leverage electronic medical records , prescription data , medical billings , hospital , and other healthcare datasets to help improve health outcomes and lower the cost of care for patients in near real time is becoming a possibility"
+135," However , processing terabytes and petabytes of de-identified healthcare data requires the application of complex and ever-changing business rules"
+136, This impacts the ability to generate near-real-time insights and conduct research studies that could potentially influence how patients are treated .
+137, Handling heterogeneous and concurrent query workloads in a multiuser environment is a common use scenario for BI analytics over SQL-on-Hadoop systems
+138," Properly deploying a SQL-on-Hadoop cluster that provides the best performance in such an environment requires extensive knowledge of the workloads , overall resource utilization , database table design , software stack configurations , and hardware settings"
+139," An improperly planned deployment can lead to an underutilized cluster , wasting company assets or failing to meet performance requirements"
+140," In one real-world example , a company deployed an 80-node cluster ; however , their workloads and data volume required less than half of the nodes to meet their performance requirement"
+141, This means more than half of the nodes sat doing nothing but waiting to be depreciated
+142," In another , a company used more expensive SSDs even though , at the software level , operations were single threaded and bottlenecked by CPU rather than I/O—thus , HDDs might have been a better choice for deployment"
+143," Of course , in some scenarios , SSDs might improve the overall query execution time by more than 50 % , so there is really no one-size-fits-all solution ."
+144," Running real-time data-intensive applications on Apache Hadoop requires complex architectures to store and query data , typically involving multiple independent systems that are tied together through custom-engineered pipelines"
+145," A common pattern is to use a NoSQL engine like Apache HBase for caching and later transformations , the results of which are periodically written to HDFS in one of the popular open columnar file formats as a prerequisite for querying by a SQL engine ."
+146," One of the ways to drive enterprise adoption of big data in financial services is to have a central standardized , reusable , transparent , and well-governed library of features ( or metrics ) that will empower data scientists and business analysts across a range of business problems"
+147, This is the central idea behind a feature store—a library of documented features for various analyses based on a shared data model that spans a wide variety of data sources resident within a bank’s data lake .
+148, Zillow pioneered providing access to unprecedented information about the housing market
+149, Long gone are the days when you needed an agent to get comparables and prior sale and listing data
+150," Enter Zillow , the nation’s number-one real estate website and mobile app"
+151," With more data , data science has enabled more use cases"
+152," Jasjeet Thind explores Zillow’s big data platform , discusses some of its core machine-learning algorithms , and outlines best practices for scaling streaming data ingestion and data processing in Spark ."
+153, Bas Geerdink offers an overview of the evolution that the Hadoop ecosystem has taken at ING
+154," Since 2013 , ING has invested heavily in a central data lake and data management practice"
+155, Bas shares historical lessons and best practices for enterprises that are incorporating Hadoop into their infrastructure landscape .
+156," Ram Sriharsha reviews major developments in Apache Spark 2.0 and discusses future directions for the project to make Spark faster and easier to use for a wider array of workloads , with an emphasis on API evolution , single-node performance ( Project Tungsten Phase 3 ) , and Structured Streaming ."
+157," In the world of distributed computing , Spark has simplified development and opened the doors for many to start writing distributed programs"
+158, Folks with little to no distributed coding experience can now write just a couple lines of code that will immediately get hundreds or thousands of machines working on creating business value .
+159, Spark’s efficiency and speed can help big data administrators reduce the total cost of ownership ( TCO ) of their existing clusters
+160, This is because Spark’s performance advantages allow it to complete processing in drastically shorter batch windows with higher performance per dollar
+161, Raj Krishnamurthy offers a detailed walk-through of an alternating least squares-based matrix factorization workload
+162," Using this methodology , Raj has been able to improve runtimes by a factor of 2.22 ."
+163, Praveen Murugesan explains how Uber leverages Hadoop and Spark as the cornerstones of its data infrastructure
+164, Praveen details the current data architecture at Uber and outlines some of the unique challenges with data processing Uber faced as well as its approach to solving some key issues in order to continue to power Uber’s real-time marketplace .
+165," Swisscom , the leading mobile service provider in Switzerland , also provides data-driven intelligence through the analysis of the data created by its mobile network"
+166," Its Mobility Insights team works to help civil administrators , tourism and marketing professionals , and many others understand the flow of people through their locations of interest"
+167," François Garillot outlines the platform , tooling , and choices that help achieve this service and some challenges the team has faced , before exploring in depth the task of understanding the speeds of populations through a path of interest ."
+168, Apache Spark has been growing in deployments for the past two years
+169," The increasing amount of data being analyzed and processed through the framework is massive , and it continues to push the boundaries of the engine"
+170," Drawing on his experiences across 150+ production deployments , Neelesh Srinivas Salian focuses on five common issues observed in a cluster environment setup with Apache Spark ( Core , Streaming , and SQL ) to help you improve the usability and supportability of Apache Spark and avoid such issues in future deployments ."
+171," Despite widespread adoption , machine-learning models remain mostly black boxes , making it very difficult to understand the reasons behind a prediction"
+172, Such understanding is fundamentally important to assess trust in a model before we take actions based on a prediction or choose to deploy a new ML service
+173," Such understanding further provides insights into the model , which can be used to turn an untrustworthy model or prediction into a trustworthy one ."
+174, eHarmony has been using machine learning for about eight years
+175," During this time , eHarmony has learned a number of lessons about how to implement machine learning at scale that allow it to rapidly address problems accurately"
+176, Recently more business units have needed data-driven models
+177," Jonathan Morra introduces Aloha , an open source project that allows the modeling group to quickly deploy type-safe accurate models to production , and explores how eHarmony creates models with Apache Spark and how it uses them ."
+178, Pinterest is a rapidly expanding product that acts as a catalogue of ideas for over 100 million people
+179, Pinterest’s content contains over 1 billion boards curated from over 50 billion pins
+180, One of the roles data scientists fill at Pinterest is to understand this rapidly changing user base and content corpus
+181, A handy tool for understanding large datasets is to reduce them to smaller datasets via clustering
+182, For this application the workflow of a data scientist is to :
+183," Predicting which stories will become popular is an invaluable tool for newsrooms , but people access their news using a variety of different platforms and sites , so identifying what stories are likely to be popular is a challenge"
+184," Very few studies have addressed the popularity of news articles specifically , although others have looked at predicting the popularity of other types of online content like tweets and videos"
+185," The reasons why a particular story becomes popular are varied and might involve contemporariness , writing quality , and other latent factors"
+186, Eui-Hong Han and Shuguang Wang explain how the Washington Post predicts what stories on its site will be popular with readers and share the challenges they faced in developing the tool and metrics on how they refined the tool to increase accuracy .
+187, Recurrent neural networks ( RNN ) and related models represent the state of the art in language modeling
+188," Trained on sufficiently large corpora , RNNs can learn to generate convincing text that obeys rules of syntax and even matches parentheses"
+189," What is especially remarkable is that these models can synthesize text from diverse inputs : text in another language ( for translation ) , images and video ( for captioning ) , and scores and categories for creation of personalized product reviews ."
+190, Much of the success of deep learning in recent years can be attributed to scale—bigger datasets and more computing power—but scale can quickly become a problem
+191," Distributed , asynchronous computing in heterogenous environments is complex , hard to debug , and hard to profile and optimize"
+192," Martin Wicke demonstrates how to automate or abstract away such complexity , using TensorFlow as an example"
+193," Martin covers the sources of complexity for large-scale machine-learning systems , explains how to mitigate such complexity , and touches upon the future avenues for this work , where , unsurprisingly , machine learning will be used to understand and improve machine learning ."
+194," Creating production-ready analytical pipelines can be a messy , error-prone undertaking"
+195," In the simplest case , connecting a workflow of heterogeneous components , such as databases , feature enrichment and visualization tools , programming languages , and analytical engines , requires maintaining connections between multiple tools"
+196, And each of these tools is subject to its own development cycle
+197," In the case of projects involving big data or analytics over real-time streaming data , the difficulties only increase ."
+198, Topics include :
+199," Every day , analysts at Citi , Standard Chartered Bank ( SCB ) , and Polaris analyze transactions and behaviors for indicators of money laundering , fraud , and human trafficking"
+200," The most comprehensive investigation must leverage massive volumes of data from financial institutions , law enforcement and government agencies , social media sites , telecommunication organizations , and enterprises , but it often comes with varied data quality standards or in unusable formats and nonstandard structures"
+201," Analysts ability to explore , clean , shape , and integrate the data can’t be slowed down by time-consuming user compute cycles or resource-intensive ETL processes"
+202, And the entire flow—from source data to usable information—must be auditable and fully trusted .
+203, Trends driving demand for automated machine learning ( AML ) include the growing availability of big data through Hadoop architecture and the shortage of experienced data scientists
+204," Successful big data projects require careful consideration of project definition , success criteria , organizational design , and implementation , and executives contribute vitally to this process"
+205, Jeremy Achin teaches executives how to identify opportunities to optimize their business using machine learning
+206, This means radically reducing time to value the total cycle time from data to predictions and broadening the pool of people who can contribute to machine-learning projects without sacrificing quality
+207," Jeremy also introduces DataRobot , AML software that supports and reflects these best practices , and explains how DataRobot interfaces with HDFS , YARN , Apache Spark , and other key components in a Hadoop cluster ."
+208," To thrive as a data-driven enterprise , organizations must train their eye for the best opportunities for analytic impact"
+209, Creative problem-solving through collaboration enables each individual working with data to utilize their strengths and specialized skills
+210," Hypothesis testing for business impact through analytics requires finding ways to share hypotheses as well as the data assets that are used to test assumptions through data tools like data inventories , data catalogs , code repositories , and data visualization tools ."
+211, Hadoop platforms can be very effective and efficient at analyzing historical data at scale in minutes or smaller-scale data in near real time
+212, Data lakes provide large-scale data processing and storage at low cost but often struggle to deliver real-time analytic response without significant investment in large clusters
+213," Technologies like Apache Spark promise to take the Hadoop stack beyond batch , but even they rely on a “microbatch” approach instead of truly streaming in real time"
+214," Further , the complexities associated with development and ongoing management of a data lake that aims to deliver real-time analytic response can be costly and overwhelming ."
+215, Massively parallel big data platforms are quickly becoming the industry standard for organizations looking to extract greater value from data
+216," As architectures have shifted , application development paradigms have also changed to reflect growing needs for agility , scale , robustness , efficiency , and ease of collaboration on these new platforms ."
+217," Data is a company’s lifeblood , and more data exists than ever before—in more disparate silos"
+218," Getting the insights you need , sifting through data , and answering new questions have all been complex , hairy tasks that only data jocks have been able to do"
+219," The entire process is slow and daunting , and businesses are never satisfied with the outcome"
+220, Andrew Yeung and Scott Anderson explore new ways to challenge the status quo through automated data blending and smart data discovery across diverse sources to speed insights for business users
+221, See and hear about real customer use cases and learn how to reinvent your organization’s analytics capability .
+222," When building your data stack , the architecture could be your biggest challenge"
+223, Yet it could also be the best predictor for success
+224," With so many elements to consider and no proven playbook , where do you begin to assemble best practices for a scalable data architecture ? Ben Sharma offers lessons learned from the field to get you started"
+225," If you are concerned with building a data architecture that will serve you now and scale for the future , this is a must-attend session ."
+226," Building , running , and governing a data lake and production data applications on Hadoop is often a difficult process filled with slow development cycles and painful operations"
+227," Not only are traditional development tools and techniques missing from the Hadoop ecosystem , but mastering data ingestion and data integration , as well as enterprise governance and security , has become a formidable challenge when building big data solutions"
+228," The challenge only increases as the Hadoop ecosystem continues to grow , use cases mature , SLAs intensify , and services become customer facing and revenue generating"
+229," And while the IT organization owns the task of mitigating these issues , more importantly , it also has an opportunity to enable the business to reduce time to insights and make better decisions faster by providing them with a modern self-service environment for their data ."
+230," More and more frequently , owners of Hadoop deployments find themselves facing the challenge of supporting data science ecosystems like Python and R , both adjacent to and within their Hadoop infrastructure"
+231," Although these technologies promise powerful data science insights , they can also be complex to manage and deploy"
+232," As people build out data science sandboxes and production environments , they discover a number of challenges ranging from basic package management and data lineage to reproducibility and governance of data science artifacts ."
+233, The last 10 years have seen Hadoop move from storage cost killer to contender for the next do-or-die platform in financial services
+234," Fintech organizations have used Hadoop for building advanced scientific , operational data stores , data warehousing and reporting , consumer application development , data visualization , and real-time processing"
+235, But what’s the point at which Hadoop tips from a Swiss-army knife of use cases to a new foundation that rearranges how the financial services marketplace turns data into profit and competitive advantage ? This panel of expert practitioners looks into the near future to see if the inflection point is at hand .
+236, The emerging Industrial Internet of Things is giving rise to what is predicted to be a sweeping change that will fundamentally transform industries and reconfigure the technology landscape
+237," Sensor data is expected to dwarf the data volumes that defined the first decade of big data , and leading companies will be those that effectively derive value from this next wave of information and opportunity"
+238," Yet , the challenges for enterprises remain formidable"
+239," The information required to enable breakthrough insights is typically fragmented within the domains of information technology ( IT ) and operational technology ( OT ) , requiring both technical and cultural changes"
+240," Further , organizations are realizing that analytics on sensor data is vastly more diverse and complex than analyzing traditional big datasets like weblogs"
+241," Cheryl Wiebe explores how leading companies harness the IoT by putting IoT data in context , fostering collaboration between IT and OT and enabling a new breed of scalable analytics ."
+242, Two of the hottest topics in analytics are data lakes and big data in the cloud
+243," Enterprises like Asurion Services are using Hadoop and Informatica’s big data management solutions to deliver faster , more flexible , and more repeatable big data projects"
+244," By adopting a big data management architecture on top of Hadoop , enterprises can quickly and flexibly ingest , cleanse , master , govern , secure , and deliver all types of data on-premises or in the cloud for business data lake initiatives ranging from marketing effectiveness to fraud detection"
+245, Viral Shah explains how enterprises like Asurion Services are leveraging big data management solutions to accelerate enterprise data lake initiatives for business value .
+246, A study by HPE’s security unit found that 70 percent of popular consumer IoT devices are easily hackable
+247, Many of the simplest IoT ( or machine-to-machine ) devices lack adequate processing power and storage to host endpoint security software
+248," As a result , attackers can exploit vulnerabilities in consumer devices and mobile applications to gain remote access to internal networks and expose users to man-in-the-middle attacks ."
+249," Jonathon Whitton details how PRGX is using Talend and Cloudera to load two million annual client flat files into a Hadoop cluster and perform recovery audit services in order to help clients detect , find , and fix leakage in their procurement and payment processes"
+250," Jonathon also explores how PRGX unzips and decrypts transactional data received from customers so it can analyze the data using a joblet in Talend , shaving hours of time off each job ."
+251, The trend of deploying Hadoop on virtual infrastructure is rapidly increasing
+252," Martin Yip explores the benefits of virtualizing Hadoop through the lens of three real-world examples and walks you through the basics of virtualizing Hadoop , the first step in providing Hadoop on the public or private cloud ."
+253, Big data is being thrown around as a silver-bullet solution to enable organizational agility and transformation
+254," All your data in one place sounds great on paper , but is it really ? Thomas Place explores the big data journey of the world’s biggest payment processor , which came dangerously close to building a data swamp before pivoting to embrace governance and quality-first patterns"
+255," This case study includes patterns , partners , successes , failures , and lessons learned to date and reviews the journey ahead ."
+256, Big data and analytics is a team sport empowering companies of all kinds to achieve business outcomes faster and with greater levels of success
+257," Dell EMC has integrated all the key components for modern digital transformation , taking you on a big data journey that focuses on analytics , integration , and infrastructure"
+258," Its portfolio provides the flexibility to buy or build your analytics ecosystem , and offerings range from servers and data lakes to flexible analytics with a turn-key development platform"
+259, Carey James explains how the formation of Dell Technologies and Dell EMC can help you on your data analytics journey and how you can turn actionable insights into new business opportunities .
+260," The flux capacitor was the core component that made time travel possible in Back to the Future , processing garbage as a power source"
+261," Did you know that you can achieve the same affect in machine learning ? Ingo Mierswa , RapidMiner’s cofounder and CEO , offers a case study on how he took “garbage” data drawn from 250K data scientist RapidMiner users and through machine learning turned it into Wisdom of Crowds , which helps novice and expert data scientists alike accelerate the creation of their predictive models by delivering expert recommendations about what other scientists would do at every step in their predictive analytics process"
+262," Ingo covers the most frequently used machine-learning techniques , what data preparation most experts perform before modeling , and how those behaviors have changed over time , along with other interesting patterns ."
+263," A major challenge in today’s big data world is getting data into a data lake in a simple , automated way"
+264, Many organizations use Python or another language to code their way through these processes
+265, But when the number of data sources increases into the hundreds—or often thousands—coding scripts for each source becomes time consuming and extremely difficult to manage and maintain .
+266," Defining the challenges , outlining the goals , identifying the use cases , and tracking ROI are always important considerations when building a big data strategy , but what about greater behind-the-scenes challenges like security , consumer privacy , fraud detection , governance , and financial investment ? Each impacts the business and its brand"
+267," Mastercard’s Nick Curcuru hosts an interactive fireside chat with Anthony Dina from Dell to explore how the flexibility , scalability , and agility of Hadoop big data solutions allow one of the world’s leading organizations to innovate , enable , and enhance the customer experience while still expanding emerging opportunities"
+268, You’ll also have the chance to discuss the most important considerations for driving big data strategies and implementations .
+269," As software becomes more free and open , it also is becoming more complex and expensive to operate"
+270," How can we in the open source community clarify best practices and recommended operations to model complex , interconnected services so users can focus on their ideas ? How can we as developers deliver recommended best practices in our applications so users are free to focus on the science on their choice of substrate ( e.g. , laptop , cloud , or bare metal/x86 , ARM , ppc64el , or s390x ) ?"
+271, Customers are looking to extend the benefits beyond big data with the power of the deep learning and accelerated analytics ecosystems
+272," Jim McHugh explains how customers are leveraging deep learning and accelerated analytics to turn insights into AI-driven knowledge and covers the growing ecosystem of solutions and technologies that are delivering on this promise , such as the NVIDIA DGX-1 , which integrates power of deep learning and accelerated analytics together in a single hardware and software system ."
+273," In-chip analytics blasted onto the scene a few years back , impressing companies with its ability to significantly impact how companies handle complex data ( both large and disparate ) with less hardware while eliminating the data preparation nightmare"
+274," But the real impact of in-chip analytics is only now being realized as companies exploit in-chip’s extensibility , scaleability , and flexibility to take business intelligence to the next level with new IoT and AI technologies"
+275, Guy Levy-Yurista explains the unexpected consequences of making big data processing significantly more agile than ever before and the impact it’s having on human insight consumption .
+276," Legacy enterprise data warehouse ( EDW ) architecture , geared toward day-to-day workloads associated with operational querying , reporting , and analytics , is often ill-equipped to handle the volume of data or traffic and varied data types associated with modern ad hoc analytics platforms"
+277," Faced with the challenges of increasing pipeline speed , aggregation , and visualization in a simplified , self-service fashion , organizations are considering newer technologies such as Apache Spark , Hadoop , Kafka , and columnar databases as key enabling technologies to optimize their EDW architectures ."
+278, Data wrangling has quickly become a hot topic and technology category within the big data analytics industry
+279, Stakeholders across business and IT are hungry to learn the right way to think about applying these new wrangling solutions to the data and analytics efforts of their organization
+280," As with any emerging technology , the leading question from organizations still learning about data wrangling is , “How are other organizations wrangling data and what are the benefits they are realizing ? ” If this question sounds familiar , then this is the session for you ."
+281," Machine data is growing at an exponential rate , and a key driver for this growth is the Internet of Things ( IoT ) revolution"
+282, Johan Bjerke explains how to make use of and find value in the unstructured machine data that plays an important role in the new connected world .
+283, Businesses are clamoring to capture all data possible and harness it as a revenue driver
+284, The challenge is bringing the data together
+285, Companies that can capture and harness this data can benefit accordingly .
+286," Businesses today are driven to adopt big data technologies for their analytics for a number of reasons : There are new types of data sources that are not handled by the existing data warehouses ; there is a growth in data velocity and data volumes that becomes prohibitive to process using existing data warehouses ; or there are different types of analytics not supported by existing infrastructure , to name a few ."
+287," Strata + Hadoop World program chairs Roger Magoulas , Doug Cutting , and Alistair Croll welcome you to the first day of keynotes ."
+288," Since its inception , big data solutions have best been known for their ability to master the complexity of the volume , variety , and velocity of data"
+289," But as we enter the era of data democratization , there’s a new set of concerns to consider"
+290," Mike Olson discusses the new dynamics of big data and how a renewed approach focused on where , who , and why can lead to cutting-edge solutions ."
+291," During election season , we’re tasked with considering the next four years and comparing platforms across candidates"
+292, What’s good for the country is good for your data
+293, Consider what the next four years will look like for your organization
+294," How will you lower costs and deliver innovation ? Jack Norris reviews the requirements for a winning data platform , such as speed , scale , and agility ."
+295," Susan Woodward discusses venture outcomes—what fraction make lots of money , which just barely return capital , and which fraction fail completely"
+296," Susan uses updated figures on the fraction of entrepreneurs who succeed , including some interesting details on female founders of venture companies ."
+297," The power of artificial intelligence and advanced analytics emerges from the ability to analyze and compute large , disparate datasets from varied devices and locations , such as predictive medicine and automated cars , at lightning-fast speed"
+298, These real-time insights require continued innovation to fuel the changing landscape of AI
+299, Martin Hall explains why collaboration and openness are the key elements driving innovation in AI .
+300, It is no surprise that reducing operational IT expenditures and increasing software capabilities is a top priority for large enterprises
+301," Given its advantages , open source software has proliferated across the globe"
+302," While there’s been much discussion on open source versus commercial , CIOs and CTOs at Global 1000 enterprises are increasingly interested in solutions that blend the benefits of both"
+303," However , key challenges must be overcome"
+304," Enterprise architecture groups are now faced with the difficult task of selecting the right open source software components from an ever-growing set of options , figuring out how to integrate them , and ensuring they work together ."
+305," How do we discover what we’re not looking for ? How can we become more serendipitous ? In the age of big data and bioinformatics , such questions are more relevant than ever"
+306," We develop new tools to help us spot clues in mountains of information , and machines are getting better and better at aiding discovery"
+307," And yet , serendipity remains a very human art"
+308, Pagan Kennedy discusses the origins of the word serendipity and qualities of mind that lead to successful searches in the deep unknown .
+309, It is clear that we’re at a critical inflection point in the industry—organizations are realizing that they must quickly adapt in order to keep pace in today’s ever changing digital economy
+310," Data , your most precious commodity , is increasing at an alarming rate"
+311," At the same time , an emerging business imperative has made this data a component of your deepest insights , allowing you to focus on your business outcomes"
+312, Patricia Florissi explains why the recent formation of Dell EMC ensures that your analytics capabilities will be stronger than ever .
+313," Healthcare , a $ 3 trillion industry , is ripe for disruption through data science"
+314," However , there are many challenges in the journey to make healthcare a truly transparent , consumer-centric , data-driven industry"
+315, Sriram Vishwanath explains where data science can have massive impact in healthcare and dispels myths where its apparent use contradicts realities within the healthcare ecosystem .
+316, American politics is adrift in a sea of polls
+317," This year , that sea is deeper than ever before—and darker"
+318, Data science is upending the public opinion industry
+319," But to what end ? In a brief , illustrated history of the field , Jill Lepore demonstrates how pollsters rose to prominence by claiming that measuring public opinion is good for democracy and asks , “But what if it’s bad ? ”"
+320, Quench your thirst with vendor-hosted libations ( and snacks ) while you check out all the exhibitors in the Expo Hall
+321, It’s also a great time to meet and mingle with fellow attendees and Strata + Hadoop World speakers and authors .
+322, Birds of a Feather ( BoF ) discussions are a great way to informally network with people in similar industries or interested in the same topics .
+323, Calling all data enthusiasts .
+324, Sponsored by :
+325, Increasing demand for more and higher-granularity data continues to push the boundaries of what is possible to process using big data technologies
+326, Netflix’s Big Data Platform team manages a highly organized and curated data warehouse in Amazon S3 with over 40 petabytes of data
+327," At this scale , we are reaching the limits of partitioning , with thousands of tables and millions of partitions per table ."
+328," Tyler Akidau offers a whirlwind tour of the evolution of massive-scale data processing at Google , from the original MapReduce paradigm to the high-level pipelines of Flume to the streaming approach of MillWheel to the portable , unified streaming/batch model of Google Cloud Dataflow and Apache Beam ( incubating )"
+329," Tyler examines in detail the basic architectural concepts that underlie these four models , highlights their similarities , contrasts their differences ( particularly regarding traditional batch versus streaming ) , and provides insight into the use cases the drove the progression of the designs to what exists today"
+330," He also highlights similarities and differences with related open source systems such as Flink , Spark , Storm , and Gearpump , calling out ways in which they’re converging on and diverging from the Beam model and what that means when running Beam pipelines on their respective runners ."
+331," Today Metamarkets processes over 300 billion events per day , representing over 100 TB going through a single pipeline built entirely on open source technologies including Druid , Kafka , and Samza"
+332," Growing to such a scale presents engineering challenges on many levels , not just in design but also with operations , especially when downtime is not an option ."
+333," In the last decade , fire services around the world have started to notice both the challenges and opportunities of our information society"
+334," More and more information about their operating environment has been made available , either as open data or by in-government data-sharing initiatives , which has made clear fire services’ poor information position as well as the resulting potential unnecessary risks their firefighters take"
+335," The fear in the current information climate is that if a firefighter is injured or killed on the job , the investigation might show that the fire service knew in advance ( but didn’t or couldn’t share ) vital information that could have prevented the incident ."
+336, Cluster computing frameworks such as Hadoop or Spark are tremendously beneficial in processing and deriving insights from data
+337," However , long query latencies make these frameworks suboptimal choices to power interactive applications"
+338," Organizations frequently rely on dedicated query layers such as relational databases and key-value stores for faster query latencies , but these technologies suffer many drawbacks for analytic use cases ."
+339, Airbnb developed Caravel to provide all employees with interactive access to data while minimizing friction
+340," Caravel provides a quick way to intuitively visualize datasets by allowing users to create and share interactive dashboards ; a rich set of visualizations to analyze your data , as well as a flexible way to extend the capabilities ; an extensible , high-granularity security model allowing intricate rules on who can access which features and integration with major authentication providers ( database , OpenID , LDAP , OAuth , and REMOTE_USER through Flask AppBuilder ) ; a simple semantic layer , allowing you to control how data sources are displayed in the UI by defining which fields should show up in which drop-down and which aggregation and function ( metrics ) are made available to the user ; and deep integration with Druid that allows for Caravel to stay blazing fast while working with large , real-time datasets ."
+341," Uma Raghavan explains why you’re about to see companies whose business models depend on using their customers’ data , like Facebook , Google , and many others , scramble to keep up with the flood of new and evolving laws on data privacy"
+342," Whether using your customers’ data , buying third-party data , or mashing it up to make derivative data to better market to customers , create better products and services , or provide customer support , you could be in violation of emerging data privacy laws from around the world that carry stiff fines ( up to 5 % of revenue ) or even jail time for violations of the use of people’s personal data"
+343," Ultimately , using customer data is a balance between what your business needs to do to run efficiently and effectively and what the brand , regulatory , and legal risks are if you get caught in violation of the law"
+344, Join Uma to learn what’s needed to manage your data risk effectively .
+345, Data science is a process of abstraction
+346," In order to explain or to predict a real phenomena , the process starts with acquiring and refining the data"
+347," It then moves between the three layers of abstraction : transformations ( data abstraction ) , visualizations ( visual abstraction ) , and modeling ( symbolic abstraction )"
+348, All three layers of abstraction together build a truer ( or closer ) representation of the real phenomena .
+349, AI is moving from consumer applications to the enterprise and will soon affect all parts of operations from the customer to the product to the enterprise
+350," Stephen Pratt , the CEO of Noodle.ai and former head of Watson for IBM GBS , presents a shareholder value perspective on why enterprise artificial intelligence ( eAI ) will be the single largest competitive differentiator in business over the next five years—and what you can do to end up on top ."
+351," Data should be something you can see , feel , hear , taste , and touch"
+352," Cameron Turner , Brad Sarsfield , Hanna Kang-Brown , and Evan Macmillan cover the emerging field of sensory data visualization , including data sonification"
+353," In an anecdotal survey , they explore real-life examples of solutions deployed to production in industries spanning from consumer goods to heavy industrial and large-scale manufacturing to the IoT that take advantage of auditory , touch , and other senses as alternative means of what has traditionally been called data visualization"
+354," They then investigate the hypothesis that we might better consume information by moving beyond words , numbers , and pictures and start using sound , smell , and even taste as a means to better understand the state of the world"
+355," Topics will tie into Cameron’s recent interview on the , which focused on data sonification , extending these topics into the future of sensory data collection and consumption ."
+356," Agility is king in the world of finance , and a message-driven architecture is a mechanism for building and managing discrete business functionality to enable agility"
+357," In order to accommodate rapid innovation , data pipelines must evolve"
+358," However , implementing microservices can create management problems , like the number of instances running in an environment ."
+359," To manage the ever-increasing volume and velocity of data within your company , you may have successfully made the transition from single machines and one-off solutions to large , distributed stream infrastructures in your data center powered by Apache Kafka"
+360, But what’s to be done if one data center is not enough ?
+361," Digital consumer companies are disrupting the old guard and changing the way we do business in fundamental ways ; for example , Uber , Airbnb , and Zipcar have disrupted the traditional businesses of taxis , hotels , and car rental companies by leveraging software capabilities to create new business models"
+362, Opportunities in the industrial world are expected to outpace consumer business cases
+363, Time series data is growing exponentially as new machines around the world get connected
+364," Venkatesh Sivasubramanian and Luis Ramos explain how GE makes it faster and easier for systems to access ( using a common layer ) and perform analytics on a massive volume of time series data by taking what they’ve learned from Apache Arrow and applying it today for highly efficient time series storage using Apache Apex , Spark , and Kudu ."
+365, IoT and financial trading platforms share some commonality : they intercept massive amounts of sensor or event data and must provide insights and actions in real time
+366," The technology challenge is huge since we need to combine fast event streams , historical state , and consistent data update transactions ( e.g. , time series data and statistical aggregators ) with data science and machine learning and present results through real-time dashboards or drive immediate corrective actions ."
+367, Recent years have seen significant evolution of the Internet of Things
+368, It has become increasingly easy to connect devices to the Internet and send sensory data to the public cloud
+369," However , the adoption of IoT platforms and stream analytics within the enterprise is lagging and less prevalent , an effect of the lack of skilled developers required to deploy an on-premises platform and the limited demonstration of high value in real-life use cases ."
+370, The history of the digital age is being written in photographs
+371," Today , for better or worse , everyone is a both a photographer and a subject"
+372," We need to start thinking about visual content in a radically different way , as both organizations and individuals"
+373," To innovate in the visual age , we have to crack the visual code"
+374," This means learning as much as we can , not only about how we see but also about how computers see so we can teach them to discover hidden opportunities and disregard hidden biases"
+375," If we try hard enough , maybe they’ll teach us to do the same ."
+376, Otto is the world’s second-largest online retailer in a highly competitive market space
+377," Superior customer experience in terms of higher empathy , relevance , and speed is key to positive customer experience , and this is where AI comes into play"
+378, Rupert Steffner explores the cornerstones retailers have to focus when building their customers’ experience on artificial intelligence
+379, It starts with having clear goals and a value system that finds the right balance between customer retention and revenue optimization
+380," Even if AI is hereby built from the seller’s perspective , retailers will need a “good AI” approach that treats consumers fairly and as partners to optimize long-term customer equity ."
+381," At Strata + Hadoop World 2012 , Amy O’Connor and her daughter Danielle Dean shared how they learned and built data science skills at Nokia"
+382," ( At the time , Amy led the Big Data team at Nokia where Danielle was an intern still working on her PhD . ) In the past four years , the landscape of data science has changed drastically"
+383," In 2012 , most data science skills had to be learned organically ; today , there have been major advances in tools , education , and the general culture in organizations taking on data science work"
+384," This year , Amy and Danielle explore how the landscape in the world of data science has changed and explain how to be successful deriving value from data today"
+385," Along the way , they outline the innovative methods they’ve used to find and build a data science skill set within their teams and for those in their customer base ."
+386, Most people will agree that interviewing is one of the most difficult and least enjoyable professional activities
+387," Given the recent demand for data analytics and data science skills , it has become an increasingly daunting task for managers to adequately test and qualify candidates ."
+388," The electrical utility industry , an industry accustomed to gathering customer usage data on a monthly basis , now has access to a regular stream of data from smart meters and other smart sensors"
+389," Analyzing these new streams of data has given utilities the opportunity to understand their customer usage patterns , perform preventative maintenance , detect fraud , exercise demand management , and allocate resources more effectively ."
+390, Machine-learning tools promise to help solve data curation problems
+391," While the principles are well understood , the engineering details in configuring and deploying ML techniques are the biggest hurdle"
+392, Ihab Ilyas explains why leveraging data semantics and domain-specific knowledge is key in delivering the optimizations necessary for truly scalable ML curation solutions .
+393, Twitter generates billions and billions of events per day
+394, Analyzing these events in real time presents a massive challenge
+395," Karthik Ramasamy offers an overview of the end-to-end real-time stack Twitter designed in order to meet this challenge , consisting of DistributedLog ( the distributed and replicated messaging system ) and Heron ( the streaming system for real-time computation ) ."
+396, Many initiatives for running applications inside containers have been scoped to run on a single host
+397," Using Docker containers for large-scale production environments poses interesting challenges , especially when deploying distributed big data applications like Apache Hadoop and Apache Spark ."
+398," The Hearst Corporation monitors trending content on all of its 300+ sites worldwide , providing metrics to editors and promoting cross-platform content sharing"
+399," To facilitate this , Hearst has built a clickstream analytics pipeline entirely in the cloud that transmits and processes over 30 TB of data a day ."
+400," Society is standing at the gates of what promises to be a profound transformation in the nature of work , the role of data , and the future of the world’s major industries"
+401," Intelligent machines will play a variety of roles in every sector of the economy , from the energy supply chain to legal services and manufacturing ."
+402," According to the Identity Theft Resource Center database , more than 169,068,506 records were exposed in 2015"
+403," That stolen data has a much longer shelf life than most realize and will be used to continue the cycle of theft , deception , and fraud through one of the fastest-growing and most lucrative businesses for criminals : account takeover ( ATO ) attacks ."
+404, Traditional security tools like security information and event managers ( SIEMs ) are struggling to keep up with the terabytes of event data ( 250M to 2B events ) being generated each day from an ever-growing number of devices
+405," Cybersecurity has become a data problem , and enterprises need to reply with scalable solutions to enable effective hunting and combat evolving attacks"
+406, Rethinking the cybersecurity problem as a data-centric problem led Accenture Labs’s Cybersecurity team to use emerging big data tools along with new approaches such as graph databases and analysis to exploit the connected nature of the data to its advantage
+407," Joshua Patterson , Michael Wendt , and Keith Kraus explain how Accenture Labs’s Cybersecurity team is using Apache Kafka , Spark , and Flink to stream data into Blazegraph and Datastax Graph to accelerate cyber defense ."
+408," Kafka , developed at LinkedIn in 2010 , was originally an open system to encourage adoption ; developers could easily create new data streams , add data to the pipeline , and read data as it was created"
+409," It succeeded brilliantly at encouraging developers to build new data applications , improved the reliability of systems and applications , and helped LinkedIn scale its logging and data infrastructure ."
+410," Hadoop in the cloud is becoming an increasingly common use case , as the cloud provides rapid access to flexible and low-cost IT resources"
+411," Similar to traditional on-premises Hadoop clusters , data authorization becomes more crucial than ever for the multitenant cloud"
+412, A transparent solution that decouples compute and storage is required for a simple and smooth transition
+413," And since the underlying data is shared across the components , a unified authorization policy should be enforced to adapt the flexibility of Hadoop ecosystem ."
+414, Apache Kudu was first announced as a public beta release at Strata NYC 2015 and recently reached 1.0
+415, This conference marks its one year anniversary as a public open source project
+416," Todd Lipcon offers a very brief refresher on the goals and feature set of the Kudu storage engine , covering the development that has taken place over the last year , including new features such as improved support for time series workloads , performance improvements , Spark integration , and highly available replicated masters"
+417," Along the way , Todd explores real-world production deployments and some of the tools that have been built to help operators manage a Kudu cluster"
+418," He ends with a view of the road map of the Kudu project for the upcoming year , including plans for security and other new features ."
+419," At P & G , the Global Business Services organization delivers many shared services , including the core data infrastructure and applications from data warehouses to business intelligence and advanced analytics"
+420," Terry Mcfadden and Priyank Patel discuss Procter and Gamble’s three-year journey to enable production applications with on-cluster BI technology , exploring in detail the architecture challenges and choices made by the team along this journey , evaluation criteria , and how the final choice ( Arcadia ) fit with the big data infrastructure ."
+421," Since its introduction in Spark 1.4 , SparkR has received contributions from both the Spark community and the R community"
+422," Xiangrui Meng explores recent community efforts to extend SparkR for scalable advanced analytics—including summary statistics , single-pass approximate algorithms , and machine-learning algorithms ported from Spark MLlib—and shows how to integrate existing R packages with SparkR to accelerate existing R workflows ."
+423, Deep learning—the most significant innovation in data science in recent years—presents amazing improvements in the modeling results
+424," However , most data scientists don’t yet use deep learning for several reasons : the relative complexity of customizing deep learning models for their own problems , challenges in installing and using the required frameworks , and low performance of open source deep learning frameworks on standard CPUs ."
+425," Many areas of applied machine learning require models optimized for rare occurrences , such as class imbalances , and users actively attempting to subvert the system ( adversaries )"
+426, The Data Innovation Lab at Capital One has explored advanced modeling techniques for just these challenges
+427, The lab’s use case necessitated that it survey the many related fields that deal with these issues and perform many of the suggested modeling techniques
+428, It has also introduced a few novel variations of its own .
+429," Choice Hotels International is in the midst of a multiyear transformation that is changing key elements of its IT enterprise—replacing its monolithic central reservation system with a cloud-based , microservice-style architecture using Cassandra as the backend"
+430, A parallel project is replacing its enterprise data warehouse and reporting systems with an advanced analytics platform based on Spark and Kafka .
+431, Modern data science is the creative application of scientific principles to design new tools and processes in areas where a scientific approach has been previously infeasible due to the difficulty or expense of collecting data
+432," That’s a mouthful , but if you see data science that way , we’re likely just at the beginning"
+433, The people and things that are starting to be equipped with sensors will create data that will enable entirely new classes of problems to be approached more scientifically .
+434," Data visualizations are interactive stories that can powerfully engage audiences , giving them insight into the meanings and trends behind numbers"
+435, They often begin with a massive spreadsheet of data that has no meaning to the average person
+436, Building an effective visualization begins by asking how data can be transformed into a compelling narrative and a dynamic user experience .
+437," Apache Flink has seen incredible growth during the last year , both in development and usage , driven , to a large extent , by the fundamental shift in the enterprise from batch to stream processing"
+438," A streaming-first architecture enables continuous processing on data that is continuously produced ( as it is in most interesting datasets ) , enabling real-time decisions but also a simplified architecture that can subsume batch processing"
+439, Kostas Tzoumas dives into the benefits of using Flink as the central piece of such architecture
+440," In addition , Kostas covers the latest developments in the project and the future roadmap , such as the ability to query the state in the stream processor , new libraries ( e.g. , SQL and CEP ) , dynamic scaling , seamless application and Flink updates , and integration between batch and streaming , which leads to radically simplified architecture and deployment"
+441, Kostas concludes with a sample of what production users of Flink are currently achieving with the system .
+442, The largest challenge for deep learning is scalability
+443," With a single GPU server , it takes hours or days to finish training"
+444, This doesn’t scale for production service ; eventually you’ll need distributed training in the cloud
+445, Google has been working on a large-scale neural network in the cloud for years and has now started sharing the power with developers .
+446," Amazon Kinesis is a fully managed , cloud-based service for real-time data processing over large , distributed data streams"
+447," Customers who use Amazon Kinesis can continuously capture and process real-time data such as IoT sensor data , website clickstreams , financial transactions , social media feeds , IT logs , location-tracking events , and more"
+448," Roy Ben-Alta explores the Amazon Kinesis platform in detail and discusses best practices for scaling your core streaming data ingestion pipeline as well as real-world customer use cases and design pattern integration with Amazon Elasticsearch , AWS Lambda , and Apache Spark ."
+449, Structured Streaming is a new effort in Apache Spark to make stream processing simple without the need to learn a new programming paradigm or system
+450," Ram Sriharsha offers an overview of Structured Streaming , discussing its support for event-time , out-of-order/delayed data , sessionization , and integration with the batch data stack to show how it simplifies building powerful continuous applications ."
+451, There is a growing trend to use modern advanced technology in the finance industry
+452," Information is often obtained on much larger scales , in various modalities , and from multiple dimensions , which greatly enriches the profiles of financial entities and leads to a rapid increase in the complexity of financial analytics"
+453," In the meantime , there’s increasing demand for automating the process of data statistics , feature engineering , and model tuning ."
+454," Streaming machine learning is being integrated in Spark 2.1 , but you don’t need to wait"
+455, Holden Karau and Seth Hendrickson demonstrate how to do streaming machine learning using Spark’s new Structured Streaming and walk you through creating your own streaming model
+456, Holden and Seth will also cover how to use structured machine-learning algorithms ( if they are merged by the talk )
+457," By the end of this session , you’ll have a better understanding of Spark’s Structured Streaming API as well as how machine learning works in Spark ."
+458," Business and franchise users need access to data to generate reports and dashboards , perform analytics , and create customer-centric predictive/personalization models that assist with managing demand at Choice Hotel properties , but making data available in an accurate , timely , and reliable manner to anyone who is authorized to consume it is no easy task ."
+459, Most people are surprised to know that Spark works with Java
+460, Maybe they saw the initial Java code that used anonymous classes and dismissed it as an ungainly mess
+461, They were right—plain Java and Spark are ugly together
+462, Then Java 8’s lambdas came along
+463," Now , instead of an ungainly mess , we get the tight syntax of lambda expressions offering code that is readable and testable"
+464," Best of all , it uses Java ."
+465, Deep learning has taken us a few steps further toward achieving AI for a man-machine interface
+466," However , deep learning technologies like speech recognition and natural language processing remain a mystery to many"
+467," Yishay Carmiel reviews the history of deep learning , the impact it’s made , recent breakthroughs , interesting solved and open problems , and what’s in store for the future ."
+468, A text-mining system must go way beyond indexing and search to appear truly intelligent
+469," First , it should understand language beyond keyword matching"
+470," ( For example , distinguishing between “Jane has the flu , ” “Jane may have the flu , ” “Jane is concerned about the flu , '' “Jane’s sister has the flu , but she doesn’t , ” or “Jane had the flu when she was 9” is of critical importance . ) This is a natural language processing problem"
+471," Second , it should “read between the lines” and make likely inferences even if they’re not explicitly written"
+472," ( For example , if Jane has had a fever , a headache , fatigue , and a runny nose for three days , not as part of an ongoing condition , then she likely has the flu . ) This is a semi-supervised machine-learning problem"
+473," Third , it should automatically learn the right contextual inferences to make"
+474," ( For example , learning on its own that fatigue is sometimes a flu symptom—only because it appears in many diagnosed patients—without a human ever explicitly stating that rule . ) This is an association-mining problem , which can be tackled via deep learning or via more guided machine-learning techniques ."
+475," Political analysts may once have depended entirely on subjective attributes , such as ethics , charisma , and nonscientific impressions of the electorate to forecast elections , but with the rise of data generated from human daily interaction with software systems , it’s possible to add meaningful data-driven attributes to political forecasting alongside all of the demographic information available to today’s political consultants ."
+476, Predictive maintenance is about anticipating a failure and taking preemptive action
+477," With the recent advances in accessible machine learning and cloud storage , there is tremendous opportunity to utilize the entire gamut of data coming from factories , buildings , machines , and sensors to not only monitor the health of equipment but also predict when it is likely to malfunction or fail"
+478," However , as simple as it sounds in principle , in reality the data required to actually make a prediction in advance and in a timely manner is hard to come by"
+479," The data that is collected is often incomplete , partial , or just not enough , making it unsuitable for modeling ."
+480," For M & A speculators , intellectual property managers , and attorneys , the “holy grail” for patents is to be able to accurately assess the value of an individual invention and aggregate up to portfolios"
+481," Ignoring the softer side of a patent’s value ( i.e. , its power to halt competitive development and/or neutralize the threat of enforcement ) , there are few liquidity events—specifically litigation damages/settlements , portfolio acquisitions , and licensing fees—that allow assignees to monetize individual patents ; none of these typically make the associated data available to the research community ."
+482," Martin Wicke and Josh Gordon field questions related to their tutorial , Deep Learning with TensorFlow"
+483," Ask them about TensorFlow , machine learning ( and deep learning in particular ) , deploying ML in products , and their favorite resources to learn more about ML or any other question you might have ."
+484," Mark Grover , Jonathan Seidman , and Ted Malaska , the authors of < em > Hadoop Application Architectures < /em > , participate in an open Q & A session on considerations and recommendations for the architecture and design of applications using Hadoop"
+485, Come with questions about your use case and its big data architecture or just listen in on the conversation .
+486, Join Apache Beam and Google Cloud Dataflow engineers to ask all of your questions about stream processing
+487," They’ll answer everything from general streaming questions about concepts , semantics , capabilities , limitations , etc"
+488," to questions specifically related to Apache Beam , Google Cloud Dataflow , and other common streaming systems ( Flink , Spark , Storm , etc . ) ."
+489, Join Xiangrui Meng and Ram Sriharsha to discuss the state of Spark .
+490," John Akred , Stephen O’Sullivan , and Julie Steele will field a wide range of detailed questions about developing a modern data strategy , architecting a data platform , and best practices for CDO and its evolving role"
+491," Even if you don’t have a specific question , join in to hear what others are asking ."
+492," VoltDB promises full ACID with strong serializability in a fault-tolerant , distributed SQL platform , as well as higher throughput than other systems that promise much less"
+493, But why should users believe this ?
+494," Using Hadoop and other big data technologies , the YP Analytics application allows advertisers and media and advertising consultants to understand their digital presence and ROI"
+495," Richard Langlois explains how Yellow Pages ( YP ) used this expertise for an internal use case that delivers real-time analytics with Tableau , using OLAP on Hadoop and enabled by its stack ( HDFS , Parquet , Hive , Impala , and AtScale ) ."
+496," We all hear stories about the potential value of big data analytics , but it’s important to understand that big data analytics is a journey of introspection , operational excellence , and new , winning strategies"
+497," John Morrell leads a panel of practitioners from Dell , National Instruments , and Citi—companies that are gaining real value from big data analytics—as they explore their companies’ big data journeys , offering lessons learned and best practices"
+498, Join John to hear real-world stories from organizations that are seeing concrete results and learn how analytics can answer groundbreaking new questions about business and create a path to becoming a data-driven organization .
+499," Haoyuan Li offers an overview of Alluxio ( formerly Tachyon ) , a memory-speed virtual distributed storage system"
+500," The Alluxio open source community is one of the fastest growing open source communities in big data history with more than 250 developers from over 50 organizations around the world , and the Alluxio system has been deployed at a number of companies , including Alibaba , Baidu , Barclays , Intel , Huawei , and Qunar"
+501," In some of these deployments , Alluxio has been running in production for over a year , managing PBs of data ."
+502, Operational data stores ( ODS ) serve as a data staging area between transactional databases and data warehouses
+503," Data from multiple sources are integrated , cleansed , and prepped in the ODS before populating a data warehouse for long-term storage and analytics"
+504, Traditional ODS systems encounter severe challenges when it comes to dealing with the wide variety and massive volume of data common to data warehouses built on top of the Hadoop platform
+505, It’s time to rethink the requirements and the architecture for the next generation of an ODS on top of Hadoop
+506," Starting from first principles , Vinayak Borkar defines the requirements for a modern operational data store and explores some possible architectures to support those requirements ."
+507, The amount of cutting-edge technology that Azure puts at your fingertips is incredible
+508," Tasks like building a web server or integration workflow that used to take weeks can now be accomplished in seconds , and bundling Azure services allows developers to create solutions that , even a few months ago , would have seemed out of reach"
+509, Artificial intelligence is no exception
+510," Azure enables sophisticated capabilities in artificial intelligence , machine learning , deep learning , cognitive services , and advanced analytics"
+511, Rimma Nehme explains why Azure is the next AI supercomputer and how this vision is being implemented in reality
+512," Along the way , Rimma explains how to use Azure to process data at any scale and how to compose tools such as Spark and R and do scale-out querying on demand at massive scale ."
+513, BigQuery provides petabyte-scale data warehousing with consistently high performance for all users
+514," However , users coming from traditional enterprise data warehousing platforms often have questions about how best to adapt their workloads for BigQuery"
+515," Chad Jennings explores best practices and integration with BigQuery with special emphasis on loading and transforming data for BigQuery , as well as how BigQuery integrates with the rest of the Google Cloud Platform—including Apache Spark on Google Cloud Dataproc"
+516, Chad also discusses Big Query’s SQL dialect and its ability to handle the industry’s most common queries .
+517," Organizations from small startups to large enterprises are increasingly using open source frameworks such as Apache Hadoop , Spark , and Presto to address a broad range of analytic use cases , including business intelligence , stream processing , and machine learning"
+518," However , with any big data project comes the risk of uncapped costs , delayed timelines , expensive infrastructure , and difficult choices about where to focus in the open source toolset . Jonathan Fritz explains how organizations are deploying these and other big data frameworks with Amazon Web Services ( AWS ) and how you too can quickly and securely run Spark and Presto on AWS"
+519," Jonathan demonstrates how to lower costs and accelerate deployment of big data applications , using Amazon EMR to easily create a Hadoop cluster running Spark and Presto and querying data in Amazon S3 using ANSI SQL"
+520," Jonathan then explores how you can use Amazon S3 as a highly scalable , durable , and secure data lake by decoupling compute from storage , before outlining best practices to lower costs using Amazon EC2 Spot Instances and discussing how to secure your clusters using AWS’s extensive security capabilities ."
+521," Join Max Shron , former consultant on data science and current head of Warby Parker’s data science team , for a Q & A all about data science consulting"
+522, Bring your questions about getting into the data science consulting business ( or your questions about how to transition from consulting to something new )
+523," Even if you don’t have questions , join in to hear what others are asking ."
+524, Join Apache Kafka cocreator and PMC chair Jun Rao and Apache Kafka committer and architect of Kafka Connect Ewen Cheslack-Postava for a Q & A session about Apache Kafka
+525," Bring your questions about Kafka internals or key considerations for developing your data pipeline and architecture , designing your applications , and running in production with Kafka"
+526," Even if you don’t have a specific question , join in to hear what others are asking ."
+527," Rajesh Shroff reviews the big data and analytics landscape , lessons learned in enterprise over the last few years , and some of the key considerations while designing a big data systems"
+528," Rajesh also highlights differentiations in the Cisco Unified Computing Systems ( UCS ) platform , outlines Cisco’s big data ecosystem partnerships and certified Cisco-validated designs ( CVDs ) , and demonstrates what UCS Director Express can bring to managing your big data environment by significantly increasing productivity and reducing operational cost ."
+529," Big data and Hadoop are a critical part of the data fabric of companies ; as such , proper information governance is key in order to support data-driven applications that extend line-of-business processes , radically transforming industry-specific solutions"
+530," With big data and Hadoop a general-purpose , reusable resource , developers and administrators need to meet the critical enterprise adoption criteria of correctness , quality , consistency , compliance , and traceability"
+531, Big data solutions and the quality of data in data lakes should not generate additional risk to the business or be a roadblock to application development and user adoption
+532," These solutions must meet the highest levels of enterprise information governance , compliance , and regulation without stifling the democratization , agility , and openness promised by big data ."
+533," In this new world order , data collection must come with a corporate responsibility to protect data"
+534," Sometimes this is a legal requirement , as in the EU’s data protection regulation ( aka GDPR ) , Russia’s federal law on personal data , and Germany’s Bundesdatenschutzgesetz ( BDSG ) , but many times , it’s only a social responsibility , a quite complicated and gray area—it’s all about what you feel is “right.”"
+535, Join DJ Patil and Lynn Overmann to ask your questions about data science at the White House .
+536," With so much variance across Hadoop distributions , ODPi was established to create standards for both Hadoop components and testing applications on those components"
+537, The Linux Foundation’s John Mertic offers an overview of ODPi and its benefits before IBM’s Berni Schiefer discusses applications such as IBM Big SQL that have been designed to work with ODPi-compliant Hadoop distributions
+538, Join in to learn how application developers and companies considering Hadoop can benefit from ODPi .
+539," Big data offers the possibility of deep insights into marketing programs and business operations , as well as a 360-degree view of customers and competitors"
+540," For many enterprises , being able to achieve such results means combining new and traditional data sources and modernizing ETL and data warehouse applications"
+541," These tasks seem easy during research and proof-of-concept phases , but complexity grows exponentially when moving toward enterprise-grade implementations ."
+542," Scott Gnau provides unique insights into the tipping point for data , how enterprises are now rethinking everything from their IT architecture and software strategies to data governance and security , and the cultural shifts CIOs must grapple with when supporting a business using real-time data to scale and grow ."
+543," Ready to take a deeper look at how Hadoop and its ecosystem has a widespread impact on analytics ? Douglas Liming explains where SAS fits into the open ecosystem , why you no longer have to choose between analytics languages like Python , R , or SAS , and how a single , unified open analytics architecture empowers you to literally have it all ."
+544," Launched in late 2015 , Cigna’s enterprise data lake project is taking the company on a data governance journey"
+545," Using Podium as the software platform for its data lake , Cigna’s data Management and Governance teams are eliminating silos of activity and creating a common thread of activity—based on a shared platform of metadata—to connect and align activities across technical teams and business processes ."
+546," While traditional methods may be proficient to collect and analyze uniform data , utilizing multiple structured and unstructured external data sources can be challenging"
+547, Joe Caserta explains how one of the largest membership interests groups in the country makes sense of the influx of information from streaming external data sources
+548," This challenge is exciting because aside from collecting data from its ~40 million members , the group also needs to monitor digital and traditional interactions cohesively to predict and optimize a member’s path to purchase ."
+549," Mariusz Gądarowski offers an overview of Neptune , deepsense.io’s new IT platform-based machine-learning experiment management solution for data scientists"
+550," Deepsense.io uses technologies such as Theano , TensorFlow , Lasagne , scikit-learn , and Apache Spark to carry out machine-learning tasks"
+551, Neptune seamlessly integrates with these technologies and makes them easier to use
+552," Neptune enhances the management of machine-learning tasks such as dependent computational processes , code versioning , comparing achieved results , monitoring tasks and progress , sharing infrastructure among teammates , and many others ."
+553," Strata + Hadoop World program chairs Roger Magoulas , Doug Cutting , and Alistair Croll welcome you to the second day of keynotes ."
+554," In a few short years , cloud has risen from an aspirational concept to an enterprise mandate"
+555," As workloads move to the cloud , a new set of concerns in the data center are emerging , including data security , portability , and governance"
+556," Cloudera CEO Tom Reilly and James Powell , global CTO of Nielsen , discuss the dynamics of Hadoop in the cloud , what to consider at the start of the journey , and how to implement a solution that delivers flexibility while meeting key enterprise requirements ."
+557," When Hollywood portrays artificial intelligence , it’s either a demon or a savior"
+558, But the reality is that AI is far more likely to be an extension of ourselves
+559, Strata program chair Alistair Croll looks at the sometimes surprising ways that machine learning is insinuating itself into our everyday lives .
+560," Will machine learning give us better eyesight ? Join Joseph Sirosh for a surprising story about how machine learning , population data , and the cloud are coming together to fundamentally reimagine eye care in one of the world’s most populous countries , India ."
+561," The Panama Papers investigation revealed the offshore holdings and connections of dozens of politicians and prominent public figures around the world and led to high-profile resignations , police raids , and official investigations"
+562," Almost 500 journalists , coordinated by the International Consortium of Investigative Journalists and Süddeutsche Zeitung , had to sift through 2.6 terabytes of data—the biggest leak in the history of journalism"
+563, Mar Cabra explains how technology made it all possible .
+564," The need to quickly acquire , process , prepare , store , and analyze data has never been greater"
+565," The need for performance crosses the big data ecosystem too—from the edge to the server to the analytics software , speed matters"
+566, Raghunath Nambiar shares a few use cases that have had significant organizational impact where performance was key .
+567, Chad W
+568, Jennings demonstrates the power of BigQuery through an exciting demo and announces several new features that will make BigQuery a better home for your enterprise big data workloads .
+569, Keynote by DJ Patil and Lynn Overmann
+570," Data has long stopped being structured and flat , but the results of our analysis are still rendered as flat bar charts and scatter plots"
+571," We live in a 3D world , and we need to be able to enable data interaction from all perspectives"
+572, Robert Thomas offers an overview of Immersive Visualization—integrated with notebooks and powered by Spark—which helps bring insights to life .
+573," We have more data than ever before , by many orders of magnitude , yet “strong” artificial intelligence remains elusive"
+574," Some notorious difficult problems like speech recognition and the game of Go have recently seen spectacular advances , yet no machine can understand language as well as three-year-old child"
+575, Gary Marcus explores the gap between what machines do well and what people do well and what needs to happen before machines can match the flexibility and power of human cognition .
+576, Hadoop and its ecosystem mean new possibilities for analytics
+577, We’ve shifted from sample-based assessments to all-inclusive investigations
+578, The result ? Deeper insights and more relevant actions
+579," Paul Kent offers an overview of SAS’s participation in open platforms and introduces SAS Viya , a new unified and open analytics architecture that lets you scale analytics in the cloud and code as you choose ."
+580," Although 2016 is a highly unusual political year , elections and public opinion follow predictable statistical properties"
+581," Sam Wang explains how the presidential , Senate , and House races can be tracked and forecast from freely available polling data using tools from statistics and machine learning"
+582," These approaches offer a deeper understanding of the US political scene , even under extreme circumstances ."
+583, Birds of a Feather ( BoF ) discussions are a great way to informally network with people in similar industries or interested in the same topics .
